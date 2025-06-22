@@ -5,12 +5,12 @@ import { CalendarDays, Clock, User } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { DialogCreateLeaveRequest } from "../../components/dialog-create-leave-request"
 import { useIsAuthenticated } from "../../hooks/api/auth.hooks"
 import { useCurrentUserLeaveBalance } from "../../hooks/api/leave-balance.hooks"
 import { EmployeeRole, getEmployeeRoleColor } from "../../models"
 import { TableMyLeaveRequests } from "./_components/table-my-leave-requests"
 import { TablePendingLeaveRequestsToReview } from "./_components/table-pending-leave-requests-to-review"
+import { DialogCreateLeaveRequest } from "./_components/dialog-create-leave-request"
 
 export default function EmployeeDashboard() {
   const { user } = useIsAuthenticated()
